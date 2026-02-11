@@ -1,0 +1,13 @@
+[Root_CA]
+basicConstraints = critical, CA:TRUE
+keyUsage = critical, keyCertSign
+
+[TLS_Server]
+basicConstraints = critical, CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, dataEncipherment, keyAgreement
+extendedKeyUsage = critical, serverAuth
+
+[TLS_Client]
+basicConstraints = critical, CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, dataEncipherment, keyAgreement
+extendedKeyUsage = critical, clientAuth
